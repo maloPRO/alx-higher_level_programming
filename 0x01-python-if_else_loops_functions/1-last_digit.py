@@ -13,7 +13,7 @@ elif number > 0:
     elif number % 10 < 6 and number % 10 != 0:
         print(f"Last digit of {number} is {number % 10} ", end="")
         print(f"and is less than 6 and not 0")
-else:   
+else:
     if abs(number) % 10 == 0:
         print(f"Last digit of {number} is {abs(number) % -10} and is 0")
     elif abs(number) % 10 > 5:
