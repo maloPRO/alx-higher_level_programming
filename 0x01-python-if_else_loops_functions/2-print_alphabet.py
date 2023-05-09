@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-import string
-print(string.ascii_lowercase)
+alphabet_lowercase = ''.join(chr(i) for i in range(ord('a'), ord('z')+1))
+print(alphabet_lowercase)
