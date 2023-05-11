@@ -5,5 +5,4 @@ a = 1
 b = 2
 
 if __name__ == "__main__":
-    sum = add(a, b)
-    print(f"{a} + {b} = {sum}")
+    print("{} + {} = {}".format(a, b, add(a, b)))
