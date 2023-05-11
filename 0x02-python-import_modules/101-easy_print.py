@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-import os
-os.system("python3 -c 'print(\"#pythoniscool\")'")
+import subprocess; subprocess.run(['echo', '#pythoniscool'])
+
