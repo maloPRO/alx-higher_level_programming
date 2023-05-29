@@ -24,4 +24,3 @@ def list_division(my_list_1, my_list_2, list_length):
         print("An error occurred:", e)
     finally:
         return result
-
