@@ -59,4 +59,3 @@ class Square:
                 for j in range(self.__size):
                     print("#".format(), end="")
                 print()
-            print()
