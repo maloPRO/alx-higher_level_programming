@@ -2,7 +2,7 @@
 
 class Square:
     """
-    Represents a square
+    Defines a square
 
     Attributes:
         length (int): length of sides
