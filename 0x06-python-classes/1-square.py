@@ -2,10 +2,11 @@
 
 """ Defines a square """
 
+
 class Square:
     """ Creates a square. """
 
-    def __init__ (self, size):
+    def __init__(self, size):
         """
         Initializes s instance of square.
 
