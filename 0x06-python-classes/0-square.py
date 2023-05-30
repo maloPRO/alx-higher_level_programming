@@ -7,4 +7,3 @@ class Square:
     Attributes:
         length (float): length of sides
     """
-    pass
