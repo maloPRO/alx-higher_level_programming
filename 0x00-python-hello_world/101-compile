@@ -1,22 +1,10 @@
 #!/bin/bash
 
-if [[ -z "$PYFILE" ]]; then
-  echo "Error: PYFILE environment variable is not set"
-  exit 1
-fi
+# Get the filename of the Python script
+filename=$PYFILE
 
-if [[ ! -f "$PYFILE" ]]; then
-  echo "Error: $PYFILE does not exist"
-  exit 1
-fi
+# Compile the Python script and output the bytecode to $filenamec
+python3 -m py_compile "$filename" -o "${filename}c"
 
-python3 -m py_compile "$PYFILE"
-
-if [[ $? -ne 0 ]]; then
-  echo "Error: Failed to compile $PYFILE"
-  exit 1
-fi
-
-PYCFILE="${PYFILE}c"
-echo "Compiled $PYFILE to $PYCFILE"
+echo "Compiling $filename ..."
 
