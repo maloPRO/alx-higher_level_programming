@@ -1,13 +1,8 @@
 #!/usr/bin/python3
 
+""" Defines a square. """
+
 class Square:
-    """
-    Defines a square.
+    """ Does nothing """
 
-    Allows user to create squares.
-
-    Attributes:
-        length (int): length of sides.
-
-    """
     pass
