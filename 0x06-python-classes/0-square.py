@@ -5,5 +5,5 @@ class Square:
     Represents a square
 
     Attributes:
-        length (float): length of sides
+        length (int): length of sides
     """
