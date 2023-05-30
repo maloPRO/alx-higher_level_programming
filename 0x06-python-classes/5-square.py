@@ -9,6 +9,7 @@ class Square:
 
     Methods:
         area: finds area of square
+        my_print: prints square
     """
 
     def __init__(self, size=0):
