@@ -8,7 +8,7 @@ class Square:
 
     def __init__(self, size):
         """
-        Initializes s instance of square.
+        Initializes an instance of square.
 
         Args:
             size: size of square.
