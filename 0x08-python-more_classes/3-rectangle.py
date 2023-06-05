@@ -79,7 +79,6 @@ class Rectangle:
         else:
             return 2 * (self.__width + self.__height)
 
-
     def __str__(self):
         rect_str = ""
         for i in range(self.__height):
