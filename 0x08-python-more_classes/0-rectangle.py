@@ -3,5 +3,5 @@
 """ Defines a rectangle """
 
 Class Rectangle:
-    """ Creates a rectangle """
+    """ Does nothing  """
     pass
