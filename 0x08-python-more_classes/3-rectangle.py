@@ -80,7 +80,16 @@ class Rectangle:
             return 2 * (self.__width + self.__height)
 
     def __str__(self):
+        """ returns string rep """
         rect_str = ""
         for i in range(self.__height):
             rect_str += "#" * self.__width + '\n'
         return rect_str
+
+    def __print__(self):
+        """ prints string rep """
+
+        for i in range(self.__height):
+            for j in range(self.width):
+                print("#".format(), end="")
+            print()
