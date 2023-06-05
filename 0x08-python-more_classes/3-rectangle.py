@@ -81,10 +81,14 @@ class Rectangle:
 
     def __str__(self):
         """ returns string rep """
-        rect_str = ""
-        if self.__width == 0 or self.__height == 0:
+
+        if self.__height == 0 or self.__width == 0:
             return ""
 
+        rectangle_str = ""
         for i in range(self.__height):
-            rect_str += '#' * self.__width + '\n'
-        return rect_str
+            if i < self.__height - 1:
+                rectangle_str += "#" * self.__width + "\n"
+            else:
+                rectangle_str += "#" * self.__width
+        return rectangle_str
