@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 
 """ 
-0-add_integer.py
+The 0-add_integer module provides a function for adding two integers
 
-Adds two integers 
-
-Functions:
-    add_integer(a, b=98)
+Author: Gilbert Malova
+Date: 05/06/2023
 
 """
 
