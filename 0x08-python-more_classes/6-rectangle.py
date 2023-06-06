@@ -28,7 +28,7 @@ class Rectangle:
             raise TypeError("height must be an integer")
         elif height < 0:
             raise ValueError("height must be >= 0")
-    
+
         Rectangle.number_of_instances += 1
 
     @property
@@ -105,4 +105,3 @@ class Rectangle:
         """ detects instance of deletion """
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
-
