@@ -14,6 +14,10 @@ Test for area exception
 	...
 	Exception: area() is not implemented
 
+Test for accurate values
+	>>> bg.integer_validator('Test', 10)
+	
+
 Test of TypeError
 	>>> bg.integer_validator("Name", "John")
 	Traceback (most recent call last):
