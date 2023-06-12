@@ -1,0 +1,18 @@
+The ``` 1-my_list ``` module
+==========================
+
+Using ``` MyList ```
+--------------------
+
+Importing ``` MyList ``` from the ``` my_list ``` module
+	>>> MyList = __import__('1-my_list').MyList
+
+Trying with simple list of 2
+	>>> my_list = MyList()
+	>>> my_list.append(3)
+	>>> my_list.append(1)
+	>>> print(my_list)
+	[3, 1]
+	>>> my_list.print_sorted()
+	>>> print(my_list)
+	[1, 3]
