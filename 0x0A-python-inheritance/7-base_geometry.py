@@ -4,7 +4,13 @@
 
 
 class BaseGeometry:
-    """ Does geometry """
+    """
+    Does geometry
+    
+    Methods:
+        area():raises exception
+        integer_validator(): validates a value
+    """
 
     def area(self):
         """ raises error """
