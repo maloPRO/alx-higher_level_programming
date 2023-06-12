@@ -11,7 +11,7 @@ class MyList(list):
         list: inherited
     """
 
-    def __init__(self, *args):
+    def __init__(self):
         """
         Initializes list
 
@@ -21,7 +21,6 @@ class MyList(list):
         Methods:
             print_sorted():  prints sorted list
         """
-        super().__init__(*args)
 
     def print_sorted(self):
         """ Method that prints sorted list """
