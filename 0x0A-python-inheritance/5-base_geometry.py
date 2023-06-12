@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-""" Emplty class """
+""" Empty class """
+
 
 class BaseGeometry:
     """ Does Nothin """
