@@ -24,10 +24,6 @@ class BaseGeometry:
         Args:
             name (str): name
             value (int): value
-
-        Returns:
-            bool: True or false
-
         """
 
         if not isinstance(value, int):
