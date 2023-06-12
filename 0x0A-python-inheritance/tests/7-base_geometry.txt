@@ -6,35 +6,31 @@ Using ``` BaseGeometry ```
 
 Importing ``` BaseGeometry ```
 	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+        >>> bg = BaseGeometry()
 
 Test for area exception
-	>>> bg = BaseGeometry()
 	>>> bg.area()
 	Traceback (most recent call last):
 	...
 	Exception: area() is not implemented
 
 Test for accurate values
-        >>> bg = BaseGeometry()
 	>>> bg.integer_validator('Test', 10)
 	
 
 Test of TypeError
-        >>> bg = BaseGeometry()
 	>>> bg.integer_validator("Name", "John")
 	Traceback (most recent call last):
         ...
 	TypeError: Name must be an integer
 
 Test for value of 0
-        >>> bg = BaseGeometry()
 	>>> bg.integer_validator("amount", 0)
 	Traceback (most recent call last):
         ...
 	ValueError: amount must be greater than 0
 
 Test for value of less than 0
-        >>> bg = BaseGeometry()
         >>> bg.integer_validator("amount", -8)
         Traceback (most recent call last):
         ...
