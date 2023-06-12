@@ -9,18 +9,13 @@ class MyList(list):
 
     Attributes:
         list: inherited
+
+    Methods:
+        print_sorted(): prints sorted list
     """
 
     def __init__(self):
-        """
-        Initializes list
-
-        Attributes:
-            args: arguments
-
-        Methods:
-            print_sorted():  prints sorted list
-        """
+        """ Initializes MyList Class  """
 
     def print_sorted(self):
         """ Method that prints sorted list """
