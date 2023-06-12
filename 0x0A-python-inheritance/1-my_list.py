@@ -20,6 +20,5 @@ class MyList(list):
         """
         sorts list
         """
-        print(self.sort())
-
+        print(sorted(self))
 
