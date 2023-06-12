@@ -16,6 +16,7 @@ class MyList(list):
 
     def __init__(self):
         """ Initializes MyList Class  """
+        super().__init__()
 
     def print_sorted(self):
         """ Method that prints sorted list """
