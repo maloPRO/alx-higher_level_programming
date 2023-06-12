@@ -7,6 +7,11 @@ Using ``` MyList ```
 Importing ``` MyList ``` from the ``` my_list ``` module
 	>>> MyList = __import__('1-my_list').MyList
 
+Check if MyList is inherriting from list
+	>>> test_list = MyList()
+	>>> print(isinstance(test_list, list))
+	True
+ 
 Trying with simple list of 2
 	>>> my_list = MyList()
 	>>> my_list.append(3)
