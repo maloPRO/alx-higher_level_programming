@@ -5,7 +5,7 @@
 
 class BaseGeometry:
     """ Does geometry """
-    
+
     def area(self):
         """ raises error """
 
