@@ -12,4 +12,6 @@ def to_json_string(my_obj):
         my_obj (str): string to be converted to json
     """
 
-    return json.dumps(my_obj)
+    json_data = json.dumps(my_obj)
+
+    return json_data
