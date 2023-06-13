@@ -4,6 +4,7 @@
 This module contains a funtion that
 creates an Object from a “JSON file”
 """
+
 import json
 
 
@@ -13,6 +14,9 @@ def load_from_json_file(filename):
 
     Args:
         filename: name of file
+
+    Returns:
+        None
     """
 
     with open(filename, 'w', encoding='utf-8') as f:
