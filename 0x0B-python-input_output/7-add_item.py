@@ -16,4 +16,5 @@ argList = list(load_from_json('add_item.json'))
 for i in range(1, len(args)):
     argList.append(args[i])
 
+load_from_json('add_item.json')
 save_to_json(argList, 'add_item.json')
