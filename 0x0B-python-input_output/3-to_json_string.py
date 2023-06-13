@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 
-""" 
+"""
 This module contains a function
 that converts an object  to json string
 """
 
 import json
+
 
 def to_json_string(my_obj):
     """
