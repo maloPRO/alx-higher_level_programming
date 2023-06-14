@@ -6,14 +6,14 @@
 class BaseGeometry:
     """
     Does geometry
-    
+
     Methods:
         area():raises exception
         integer_validator(): validates a value
     """
 
     def area(self):
-        """ raises error """
+        """ raises exception """
 
         raise Exception("area() is not implemented")
 
