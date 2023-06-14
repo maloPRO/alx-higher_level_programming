@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 
-""" Mylist Class """
+"""
+This module contains a  custom list class that inherits from list
+"""
 
 
 class MyList(list):
     """
-    Class list
+    A custom list class that inherits from list
 
     Attributes:
         list: inherited

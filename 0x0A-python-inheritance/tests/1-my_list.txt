@@ -22,3 +22,28 @@ Trying with simple list of 2
 	[1, 3]
 	>>> print(my_list)
 	[3, 1]
+
+Testing with an empty list
+	>>> my_list_1 = MyList()
+	>>> print(my_list_1)
+	[]
+	>>> my_list_1.print_sorted()
+	[]
+
+Testing with a list with 1 element
+	>>> my_list_2 = MyList()
+	>>> my_list_2.append(10)
+	>>> print(my_list_2)
+	[10]
+	>>> my_list_2.print_sorted()
+	[10]
+
+Testing with negative numbers
+	>>> my_list_3 = MyList()
+	>>> my_list_3.append(-3)
+	>>> my_list_3.append(-5)
+	>>> my_list_3.append(-1)
+	>>> print(my_list_3)
+	[-3, -5, -1]
+	>>> my_list_3.print_sorted()
+	[-5, -3, -1]
