@@ -129,7 +129,7 @@ class Rectangle(Base):
     def display(self):
         """ Prints out the rectangle using # """
         str = ""
-        
+
         for _ in range(self.__y):
             print()
             str += "\n"
