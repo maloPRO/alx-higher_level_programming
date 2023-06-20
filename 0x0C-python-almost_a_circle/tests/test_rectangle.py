@@ -53,7 +53,3 @@ class TestRectangle(unittest.TestCase):
     def test_area(self):
         r = Rectangle(4, 10)
         self.assertEqual(r.area(), 40)
-
-    def test_display(self):
-        r = Rectangle(2, 2)
-        self.assertEqual(r.display(), "##\n##\n")

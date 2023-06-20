@@ -140,3 +140,7 @@ class Rectangle(Base):
                 self.id, self.__x, self.__y, self.__width, self.__height
         )
         return str
+
+    def update(self, *args):
+        """ updates rectangle values """
+
