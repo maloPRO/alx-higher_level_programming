@@ -82,3 +82,11 @@ class TestRectangle(unittest.TestCase):
         output = "[Rectangle] (89) 10/10 - 2/10"
 
         self.assertEqual(result, output)
+
+    def test_display(self):
+        r = Rectangle(2, 2)
+        
+        result = r.display()
+        output = "##\n##\n"
+
+        self.assertEqual(result, output)
