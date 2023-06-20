@@ -13,9 +13,16 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r.id, 11)
 
         r1 = Rectangle(11, 2, 0, 0)
-        r2 = Rectangle(2, 13, 0, 0)
+        
         self.assertEqual(r1.id, 6)
-        self.assertEqual(r2.id, 7)
+        
+    def test_rect(self):
+        r = Rectangle(10, 2)
+        self.assertEqual(r.id, 7)
+
+        r1 = Rectangle(10, 2, 0, 0, 16)
+        self.assertEqual(r1.id, 16)
+
     def test_sides(self):
         r = Rectangle(10, 8, 4, 2)
         self.assertEqual(r.width, 10)
