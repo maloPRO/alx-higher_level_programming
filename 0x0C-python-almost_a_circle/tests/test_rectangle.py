@@ -53,3 +53,11 @@ class TestRectangle(unittest.TestCase):
     def test_area(self):
         r = Rectangle(4, 10)
         self.assertEqual(r.area(), 40)
+
+    def test_str(self):
+        r = Rectangle(4, 6, 2, 1, 12)
+        result = str(r)
+
+        output = "[Rectangle] (12) 2/1 - 4/6"
+
+        self.assertEqual(result, output)

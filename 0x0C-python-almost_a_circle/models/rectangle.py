@@ -128,11 +128,16 @@ class Rectangle(Base):
 
     def display(self):
         """ Prints out the rectangle using # """
-
-        for _ in range(self.y):
+        str = ""
+        
+        for _ in range(self.__y):
             print()
-        for _ in range(self.height):
-            print(" " * self.x + "#" * self.width)
+            str += "\n"
+
+        for _ in range(self.__height):
+            print(" " * self.__x + "#" * self.__width)
+            str += " " * self.__x + "#" * self.__width + "\n"
+        return str
 
     def __str__(self):
         """ Returns a string rep """
@@ -144,3 +149,13 @@ class Rectangle(Base):
     def update(self, *args):
         """ updates rectangle values """
 
+        if len(args) >= 1:
+            self.id = args[0]
+        if len(args) >= 2:
+            self.__width = args[1]
+        if len(args) >= 3:
+            self.__height = args[2]
+        if len(args) >= 4:
+            self.__x = args[3]
+        if len(args) >= 5:
+            self.__y = args[4]
