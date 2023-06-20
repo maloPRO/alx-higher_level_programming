@@ -2,7 +2,8 @@
 
 """ This module contains a class that defines a rectangle """
 
-from  models.base import Base
+from models.base import Base
+
 
 class Rectangle(Base):
     """ Defines a rectangle """
@@ -119,3 +120,27 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         else:
             self.__y = value
+
+    def area(self):
+        """ Gets area of rectangle """
+
+        return self.__width * self.__height
+
+    def display(self):
+        """ Prints out the rectangle using # """
+        str = ""
+
+        for i in range(self.__height):
+            for j in range(self.__width):
+                str += "#"
+                print("#", end="")
+            str += "\n"
+            print()
+        return str
+
+    def __str__(self):
+        """ Returns a string rep """
+        str = "[Rectangle] ({}) {}/{} - {}/{}".format(
+                self.id, self.__x, self.__y, self.__width, self.__height
+        )
+        return str
