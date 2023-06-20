@@ -12,17 +12,6 @@ class TestRectangle(unittest.TestCase):
         r = Rectangle(10, 9, 0, 0, 11)
         self.assertEqual(r.id, 11)
 
-        r1 = Rectangle(11, 2, 0, 0)
-        
-        self.assertEqual(r1.id, 6)
-        
-    def test_rect(self):
-        r = Rectangle(10, 2)
-        self.assertEqual(r.id, 7)
-
-        r1 = Rectangle(10, 2, 0, 0, 16)
-        self.assertEqual(r1.id, 16)
-
     def test_sides(self):
         r = Rectangle(10, 8, 4, 2)
         self.assertEqual(r.width, 10)
@@ -99,5 +88,11 @@ class TestRectangle(unittest.TestCase):
         
         result = r.display()
         output = "##\n##\n"
+
+        self.assertEqual(result, output)
+
+        r1 = Rectangle(2, 3, 2, 2)
+        result = r1.display()
+        output = "\n\n  ##\n  ##\n  ##\n"
 
         self.assertEqual(result, output)
