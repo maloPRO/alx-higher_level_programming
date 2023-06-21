@@ -78,6 +78,7 @@ class TestRectangle(unittest.TestCase):
         output = "[Rectangle] (89) 10/10 - 2/10"
         self.assertEqual(result, output)
         
+    def test_update_kwargs(self):
         r2 = Rectangle(10, 10, 10, 10, 30)
         r2.update(width=1, x=2)
         result = str(r2)
