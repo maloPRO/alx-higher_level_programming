@@ -66,22 +66,24 @@ class TestRectangle(unittest.TestCase):
         r = Rectangle(10, 10, 10, 10, 20)
         result = str(r)
         output = "[Rectangle] (20) 10/10 - 10/10"
-
         self.assertEqual(result, output)
 
         r.update(89)
-
         result = str(r)
         output = "[Rectangle] (89) 10/10 - 10/10"
-
         self.assertEqual(result, output)
 
         r.update(89, 2)
         result = str(r)
-
         output = "[Rectangle] (89) 10/10 - 2/10"
-
         self.assertEqual(result, output)
+        
+        r2 = Rectangle(10, 10, 10, 10, 30)
+        r2.update(width=1, x=2)
+        result = str(r2)
+        output = "[Rectangle] (30) 2/10 - 1/10"
+        self.assertEqual(result, output)
+
 
     def test_display(self):
         r = Rectangle(2, 2)
