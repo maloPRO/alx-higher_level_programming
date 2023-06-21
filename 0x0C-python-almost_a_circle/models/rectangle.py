@@ -146,7 +146,7 @@ class Rectangle(Base):
         )
         return str
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ updates rectangle values """
 
         if len(args) >= 1:
@@ -159,3 +159,16 @@ class Rectangle(Base):
             self.__x = args[3]
         if len(args) >= 5:
             self.__y = args[4]
+
+        if len(args) == 0:
+            for key, value in kwargs.items():
+                if 'id' in kwargs:
+                    self.id = kwargs['id']
+                if 'width' in kwargs:
+                    self.__width = kwargs['width']
+                if 'height' in kwargs:
+                    self.__height = kwargs['height']
+                if 'x' in kwargs:
+                    self.__x = kwargs['x']
+                if 'y' in kwargs:
+                    self.__y = kwargs['y']
