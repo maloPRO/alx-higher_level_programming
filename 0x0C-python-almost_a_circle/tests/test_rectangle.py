@@ -5,6 +5,7 @@
 import unittest
 from models.rectangle import Rectangle
 
+
 class TestRectangle(unittest.TestCase):
     """ Rectangle class unittest """
 
@@ -77,7 +78,7 @@ class TestRectangle(unittest.TestCase):
         result = str(r)
         output = "[Rectangle] (89) 10/10 - 2/10"
         self.assertEqual(result, output)
-        
+
     def test_update_kwargs(self):
         r2 = Rectangle(10, 10, 10, 10, 30)
         r2.update(width=1, x=2)
@@ -88,7 +89,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_display(self):
         r = Rectangle(2, 2)
-        
+
         result = r.display()
         output = "##\n##\n"
 
