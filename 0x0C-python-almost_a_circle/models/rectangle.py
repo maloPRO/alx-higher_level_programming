@@ -2,7 +2,8 @@
 
 """ This module contains a class that defines a rectangle """
 
-from  models.base import Base
+from models.base import Base
+
 
 class Rectangle(Base):
     """ Defines a rectangle """
@@ -119,3 +120,55 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         else:
             self.__y = value
+
+    def area(self):
+        """ Gets area of rectangle """
+
+        return self.__width * self.__height
+
+    def display(self):
+        """ Prints out the rectangle using # """
+        str = ""
+
+        for _ in range(self.__y):
+            print()
+            str += "\n"
+
+        for _ in range(self.__height):
+            print(" " * self.__x + "#" * self.__width)
+            str += " " * self.__x + "#" * self.__width + "\n"
+        return str
+
+    def __str__(self):
+        """ Returns a string rep """
+        str = "[Rectangle] ({}) {}/{} - {}/{}".format(
+                self.id, self.__x, self.__y, self.__width, self.__height
+        )
+        return str
+
+    def update(self, *args, **kwargs):
+        """ updates rectangle values """
+
+        if len(args) >= 1:
+            self.id = args[0]
+        if len(args) >= 2:
+            self.__width = args[1]
+        if len(args) >= 3:
+            self.__height = args[2]
+        if len(args) >= 4:
+            self.__x = args[3]
+        if len(args) >= 5:
+            self.__y = args[4]
+
+        if len(args) == 0:
+            for key, value in kwargs.items():
+                if 'id' in kwargs:
+                    self.id = kwargs['id']
+                if 'width' in kwargs:
+                    self.__width = kwargs['width']
+                if 'height' in kwargs:
+                    self.__height = kwargs['height']
+                if 'x' in kwargs:
+                    self.__x = kwargs['x']
+                if 'y' in kwargs:
+                    self.__y = kwargs['y']
