@@ -1,5 +1,5 @@
 -- Lists all cities
-SELECT *
+SELECT id, name, name
 FROM cities
 	NATURAL JOIN states
 ORDER BY id;
