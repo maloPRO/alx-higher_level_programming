@@ -4,7 +4,9 @@ FROM cities
 WHERE name = (
 	SELECT name
 	FROM state
-	WHERE name = 'California');
+	WHERE name = 'California')
+GROUP BY cities
+ORDER BY id
 
 	
 
