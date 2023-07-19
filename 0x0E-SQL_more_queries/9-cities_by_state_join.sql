@@ -1,5 +1,5 @@
 -- Lists all cities
-SELECT id, name, name
+SELECT cities.id, cities.name, states.name
 FROM cities
-	NATURAL JOIN states
-ORDER BY id;
+	INNER JOIN states ON cities.state_id = state.id
+ORDER BY cities.id;
