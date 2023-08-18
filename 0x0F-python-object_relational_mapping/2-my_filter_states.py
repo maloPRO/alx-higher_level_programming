@@ -14,13 +14,11 @@ if __name__ == "__main__":
             passwd=sys.argv[2],
             db=sys.argv[3])
 
+    state_name = sys.argv[4]
     cur = mydb.cursor()
-
-    query = 'SELECT * FROM states ORDER BY id'
-    cur.execute(query)
-    inpt = sys.argv[4]
+    cur.execute('SELECT * FROM states WHERE name = (%s) ORDER BY id',
+                (state_name,))
     states = cur.fetchall()
 
     for state in states:
-        if state[1] == inpt:
-            print(state)
+        print(state)
