@@ -11,7 +11,9 @@ if __name__ == "__main__":
             db=sys.argv[3])
 
     cur = mydb.cursor()
+
     cur.execute('Select * FROM states ORDER BY id')
+
     states = cur.fetchall()
 
     for state in states:
