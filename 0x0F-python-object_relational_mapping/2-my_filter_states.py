@@ -14,10 +14,12 @@ if __name__ == "__main__":
             passwd=sys.argv[2],
             db=sys.argv[3])
 
-    state_name = sys.argv[4]
     cur = mydb.cursor()
-    cur.execute('SELECT * FROM states WHERE name = (%s) ORDER BY id',
-                (state_name,))
+
+    cur.execute("SELECT * FROM states \
+            WHERE name LIKE BINARY '{}' \
+            ORDER BY id".format(sys.argv[4]))
+
     states = cur.fetchall()
 
     for state in states:
