@@ -19,12 +19,11 @@ if __name__ == "__main__":
 
     query = "SELECT cities.name \
             FROM cities \
-            JOIN states ON states.id = citites.state_id \
+            JOIN states ON states.id = cities.state_id \
             WHERE states.name LIKE BINARY %s \
             ORDER BY cities.id"
     cur.execute(query, (inpt,))
 
     cities = cur.fetchall()
 
-    for city in cities:
-        print(city)
+    print(', '.join(city[0] for city in cities))
