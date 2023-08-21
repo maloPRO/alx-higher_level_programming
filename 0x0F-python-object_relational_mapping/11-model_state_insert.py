@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    
+
     states = session.query(State).all()
 
     new_state = State(name="Louisiana")
