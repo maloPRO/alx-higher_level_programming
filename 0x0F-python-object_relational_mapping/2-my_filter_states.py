@@ -13,9 +13,9 @@ if __name__ == "__main__":
     db = MySQLdb.connect(host=hst, user=usr, passwd=pwd, db=dtb, port=3306)
     cur = db.cursor()
 
-    cur.execute(f"SELECT * FROM states \
-            WHERE name LIKE BINARY '{inpt}' \
-            ORDER BY id")
+    cur.execute("SELECT * FROM states \
+            WHERE name LIKE BINARY '{}' \
+            ORDER BY id".format(inpt))
     states = cur.fetchall()
 
     for state in states:
