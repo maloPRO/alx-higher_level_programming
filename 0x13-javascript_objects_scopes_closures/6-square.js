@@ -7,7 +7,7 @@ class Square extends require('./5-square.js') {
   }
 
   charPrint (c) {
-    if (c) {
+    if (c != undefined) {
       for (let i = 0; i < this.size; i++) {
         for (let j = 0; j < this.size; j++) {
           process.stdout.write('C');
