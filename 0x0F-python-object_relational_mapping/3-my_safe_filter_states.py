@@ -5,7 +5,6 @@ This module lists state based on user input
 import MySQLdb
 import sys
 
-inpt = sys.argv[4]
 if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost",
                          port=3306,
@@ -16,7 +15,7 @@ if __name__ == "__main__":
     cur = db.cursor()
     query = "SELECT * FROM states \
              WHERE name LIKE BINARY '{}%' \
-             ORDER BY states.id".format(inpt)
+             ORDER BY states.id".format(sys.argv[4])
     cur.execute(query)
 
     states = cur.fetchall()
