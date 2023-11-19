@@ -9,6 +9,7 @@ from sqlalchemy.orm import sessionmaker
 
 Base = declarative_base()
 
+
 class State(Base):
     """
     creates state class
@@ -17,4 +18,3 @@ class State(Base):
 
     id = Column(Integer, autoincrement=True, primary_key=True, nullable=False)
     name = Column(String(128), nullable=False)
-
